@@ -32,4 +32,10 @@
     <string name="close">关</string>
     <string name="appraise">星评价</string>
     <string name="ok_hint">请先填写数值，再点击确定</string>
+    <string name="register_name">昵称</string>
+    <string name="man">男</string>
+    <string name="women">女</string>
+    <string name="passwordHintOk">确认密码</string>
+    <string name="register_sms">接收消息推送</string>
+    <string name="protocol">同意本软件的用户服务协议和隐私政策</string>
 </resources>

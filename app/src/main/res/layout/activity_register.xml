@@ -39,18 +39,21 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="15dp"
+                android:contentDescription="@string/register"
                 app:srcCompat="@drawable/ic_register" />
 
             <EditText
-                android:id="@+id/editText4"
+                android:id="@+id/edit_name"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="15dp"
                 android:drawableStart="@drawable/username"
                 android:drawablePadding="10dp"
                 android:ems="10"
-                android:hint="昵称"
-                android:inputType="textPersonName" />
+                android:hint="@string/register_name"
+                android:importantForAutofill="no"
+                android:inputType="textPersonName"
+                android:maxLength="20" />
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -65,31 +68,32 @@
                     android:layout_height="wrap_content"
                     android:layout_marginStart="5dp"
                     android:layout_marginEnd="5dp"
+                    android:contentDescription="@string/register"
                     app:srcCompat="@drawable/sex" />
 
                 <RadioGroup
-                    android:id="@+id/radioGroup2"
+                    android:id="@+id/radio_group_sex"
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
                     android:orientation="horizontal">
 
                     <RadioButton
-                        android:id="@+id/radioButton3"
+                        android:id="@+id/radio_man"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginEnd="10dp"
-                        android:text="男" />
+                        android:text="@string/man" />
 
                     <RadioButton
-                        android:id="@+id/radioButton4"
+                        android:id="@+id/radio_women"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="女" />
+                        android:text="@string/women" />
                 </RadioGroup>
             </LinearLayout>
 
             <EditText
-                android:id="@+id/editText15"
+                android:id="@+id/edit_pwd"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="15dp"
@@ -98,23 +102,25 @@
                 android:ems="10"
                 android:hint="@string/passwordHint"
                 android:importantForAutofill="no"
-                android:inputType="textPassword" />
+                android:inputType="textPassword"
+                android:maxLength="6" />
 
             <EditText
-                android:id="@+id/editText16"
+                android:id="@+id/edit_pwd_ok"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="15dp"
                 android:drawableStart="@drawable/ok_password"
                 android:drawablePadding="10dp"
                 android:ems="10"
-                android:hint="确认密码"
+                android:hint="@string/passwordHintOk"
                 android:importantForAutofill="no"
-                android:inputType="textPassword" />
+                android:inputType="textPassword"
+                android:maxLength="6" />
 
 
             <EditText
-                android:id="@+id/editText17"
+                android:id="@+id/edit_phone"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="15dp"
@@ -123,26 +129,27 @@
                 android:ems="10"
                 android:hint="@string/userNameHint"
                 android:importantForAutofill="no"
-                android:inputType="textPersonName" />
+                android:inputType="phone"
+                android:maxLength="11" />
 
             <Switch
-                android:id="@+id/switch1"
+                android:id="@+id/switch_sms"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="15dp"
                 android:drawableStart="@drawable/msg"
                 android:drawablePadding="10dp"
-                android:text="接收消息推送" />
+                android:text="@string/register_sms" />
 
             <CheckBox
-                android:id="@+id/checkBox"
+                android:id="@+id/check_protocol"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="15dp"
-                android:text="同意本软件的用户服务协议和隐私政策" />
+                android:text="@string/protocol" />
 
             <Button
-                android:id="@+id/button4"
+                android:id="@+id/button_register"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="15dp"
