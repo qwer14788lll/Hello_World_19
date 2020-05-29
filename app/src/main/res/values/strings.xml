@@ -38,4 +38,7 @@
     <string name="passwordHintOk">确认密码</string>
     <string name="register_sms">接收消息推送</string>
     <string name="protocol">同意本软件的用户服务协议和隐私政策</string>
+    <string name="phone">手机号码</string>
+    <string name="sex">性别</string>
+    <string name="welcome">你好，欢迎使用~</string>
 </resources>
