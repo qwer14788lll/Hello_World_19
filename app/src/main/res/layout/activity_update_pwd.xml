@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingStart="25dp"
+    android:paddingEnd="25dp"
+    tools:context=".UpdatePwdActivity">
+
+    <ImageView
+        android:id="@+id/update_image"
+        android:layout_width="0dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="25dp"
+        android:contentDescription="@string/update_pwd"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_update_pwd" />
+
+    <EditText
+        android:id="@+id/edit_pwd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:drawableStart="@drawable/ic_new_pwd"
+        android:drawablePadding="10dp"
+        android:ems="10"
+        android:hint="@string/new_pwd"
+        android:importantForAutofill="no"
+        android:inputType="textPassword"
+        android:maxLength="6"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/update_image" />
+
+    <EditText
+        android:id="@+id/edit_ok_pwd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:drawableStart="@drawable/ok_password"
+        android:drawablePadding="10dp"
+        android:ems="10"
+        android:hint="@string/passwordHintOk"
+        android:importantForAutofill="no"
+        android:inputType="textPassword"
+        android:maxLength="6"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edit_pwd" />
+
+    <Button
+        android:id="@+id/button_update"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:text="@string/update_pwd"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edit_ok_pwd" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
