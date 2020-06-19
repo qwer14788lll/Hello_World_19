@@ -55,6 +55,7 @@ public class ResetPwdActivity extends AppCompatActivity {
                         intent.putExtra("phone",phone);
                         startActivity(intent);
                         toast = "请填写新的密码";
+                        finish();
                     }
                 }
                 Toast.makeText(ResetPwdActivity.this, toast, Toast.LENGTH_LONG).show();
